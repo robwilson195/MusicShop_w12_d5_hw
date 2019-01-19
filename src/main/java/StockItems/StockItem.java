@@ -25,4 +25,12 @@ public abstract class StockItem implements ISellable {
     public double getSellPrice() {
         return sellPrice;
     }
+
+    public double calculateMarkup() {
+        return (sellPrice - purchasePrice) / purchasePrice;
+    }
+
+    public double calculateProfit() {
+        return sellPrice - purchasePrice;
+    }
 }
