@@ -1,9 +1,10 @@
 package Instruments;
 
 
+import Interfaces.IPlayable;
 import Interfaces.ISellable;
 
-public abstract class Instrument implements ISellable {
+public abstract class Instrument implements ISellable, IPlayable {
 
     private String make;
     private String model;

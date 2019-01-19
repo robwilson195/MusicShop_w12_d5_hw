@@ -69,4 +69,9 @@ public class GuitarTest {
     public void canForecastProfit() {
         assertEquals(115.0, guitar.calculateProfit(), 0.001);
     }
+
+    @Test
+    public void canBePlayed() {
+        assertEquals("Strum strum!", guitar.play());
+    }
 }

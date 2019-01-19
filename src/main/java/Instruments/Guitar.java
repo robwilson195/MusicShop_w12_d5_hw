@@ -19,5 +19,9 @@ public class Guitar extends Instrument{
         return numStrings;
     }
 
+    public String play() {
+        return "Strum strum!";
+    }
+
 
 }
