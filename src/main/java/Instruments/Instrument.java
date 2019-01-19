@@ -51,5 +51,11 @@ public abstract class Instrument implements ISellable {
         return sellPrice;
     }
 
-    public abstract double calculateMarkup();
+    public double calculateMarkup() {
+        return (sellPrice - purchasePrice) / purchasePrice;
+    }
+
+    public double calculateProfit() {
+        return sellPrice - purchasePrice;
+    }
 }

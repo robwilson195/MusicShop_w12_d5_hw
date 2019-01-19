@@ -2,6 +2,7 @@ package Interfaces;
 
 public interface ISellable {
 
-    double claclulateMarkup();
+    double calculateMarkup();
+    double calculateProfit();
 
 }
